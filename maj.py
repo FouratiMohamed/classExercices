@@ -18,7 +18,17 @@ def tableauVersFichier(T, nomFichier):
     for i in range(len(T)):
         dump(T[i], f)
     f.close()
-        
+
+# afficher livres.dat
+def afficher():
+    f = open("livres.dat", "rb")
+    try:
+        while True:
+            livre = load(f)
+            print(livre)
+    except EOFError:
+        f.close()
+
 # mise a jour du disponibilite d'un livre
 def maj():
     afficher()
