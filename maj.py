@@ -1,7 +1,7 @@
 # fichier vers tableau
 def fichierVersTableau(nomFichier):
     f = open(nomFichier, "rb")
-    T = array([{} for i in range(100)])
+    T = array([{} for i in range(999999)])
     n = 0
     try:
         while True:
