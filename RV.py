@@ -37,5 +37,3 @@ for i in range(60):
     if T[i][-1] != "*":
         f.write(T[i]+"\n")
 f.close()
-
-print(T)
